@@ -103,7 +103,6 @@ while(running):
     render_world()  # draw game world
     delay(0.05)
 
-
 # finalization code
 
 close_canvas()
