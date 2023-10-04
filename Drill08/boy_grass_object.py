@@ -30,8 +30,10 @@ class BallBig:
         self.x,self.y = random.randint(0,700),599
         self.velocity = random.randint(5,20)
     def update(self):
-        if ( self.y >= 85 ):
+        if ( self.y > 70 ):
             self.y -=self.velocity
+        else:
+            self.y = 70
 
     def draw(self):
         self.image.draw(self.x,self.y)
@@ -44,8 +46,10 @@ class BallSmall:
         self.velocity = random.randint(5,20)
 
     def update(self):
-        if (self.y >= 85):
+        if (self.y > 60):
             self.y -= self.velocity
+        else:
+            self.y = 60
 
     def draw(self):
         self.image.draw(self.x, self.y)
